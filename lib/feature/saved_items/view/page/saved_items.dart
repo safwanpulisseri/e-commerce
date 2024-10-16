@@ -3,15 +3,13 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../../core/theme/app_color.dart';
 import '../../../../core/util/png_asset.dart';
 
-
-
-class ProductListPage extends StatelessWidget {
-  const ProductListPage({super.key});
+class SavedItems extends StatelessWidget {
+  const SavedItems({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: AppBar(
+      appBar: AppBar(
         toolbarHeight: 80,
         backgroundColor: AppColor.background,
         elevation: 0,
@@ -28,7 +26,7 @@ class ProductListPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'My Bag',
+                  'Saved Items',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -36,7 +34,7 @@ class ProductListPage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '3 items',
+                  '2 items',
                   style: TextStyle(
                     fontSize: 14,
                     color: AppColor.toneOne,
@@ -45,7 +43,7 @@ class ProductListPage extends StatelessWidget {
               ],
             ),
             Image.asset(
-              AppPngPath.libraryPageLogoBold,
+              AppPngPath.storePageLogoBold,
               height: 20,
               width: 20,
             ),
@@ -54,7 +52,6 @@ class ProductListPage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          
           const SizedBox(height: 20),
           Container(
             width: double.infinity,
@@ -173,86 +170,6 @@ class ProductListPage extends StatelessWidget {
                   ))
           
 
-              ],
-            ),
-          ),
-         const Spacer(), 
-          Container(
-            color: AppColor.background,
-            height: 120,
-            width: double.infinity,
-            child: Column(
-              children: [
-
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                    RichText(
-  text: TextSpan(
-    children: [
-      TextSpan(
-        text: 'TOTAL: ',
-        style: GoogleFonts.rubik(
-          textStyle: TextStyle(
-            color: AppColor.primary,
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-      ),
-      TextSpan(
-        text: '(excluding delivery)',
-        style: GoogleFonts.rubik(
-          textStyle: TextStyle(
-            color: AppColor.toneOne, 
-            fontSize: 18,
-            fontWeight: FontWeight.w400,
-          ),
-        ),
-      ),
-    ],
-  ),
-),
-
-                                Text(
-                                '£79.90',
-                                style: GoogleFonts.rubik(
-                                  textStyle: TextStyle(
-                                    color: AppColor.primary,
-                                    fontSize: 18, 
-                                   fontWeight: FontWeight.w500, 
-                                 
-                                  ),
-                                ),),
-                  
-                  ],),
-                ),
-                  SizedBox(width: 400,
-                  child: Divider(
-                    color: AppColor.toneOne.withOpacity(0.3),
-                  )),
-                 Container(
-                  height: 50,width: 400,
-                  decoration: BoxDecoration(
-                    color: AppColor.primary,
-                    borderRadius: BorderRadius.circular(30)
-                    
-                  ),
-                  child: Center(
-                    child: Text(
-                              'CHECKOUT',
-                              style: GoogleFonts.rubik(
-                                textStyle: TextStyle(
-                                  color: AppColor.background,
-                                  fontSize: 20, 
-                                 fontWeight: FontWeight.w500, 
-                               
-                                ),
-                              ),),
-                  ),
-                ),
               ],
             ),
           ),

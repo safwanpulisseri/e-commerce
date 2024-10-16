@@ -19,5 +19,10 @@ final class AppPngPath {
   static const scrollImageThree ="assets/png/scroll_image_three.png";
   static const bottomScrollImageOne ="assets/png/bottom_scroll_image_one.png";
   static const bottomScrollImageTwo ="assets/png/bottom_scroll_image_two.png";
-  
+  static const savedItemsOne ="assets/png/saved_items_one.png";
+  static const savedItemsTwo ="assets/png/saved_items_two.png";
+  static const deleteOulined = "assets/png/delete_icon.png";
+  static const shopingBagWithWhite = "assets/png/shopping-bag.png";
+  static const orderConfirmOne = "assets/png/confirm_image_one.png";
+  static const orderConfirmTwo = "assets/png/confirm_image_two.png";
 }

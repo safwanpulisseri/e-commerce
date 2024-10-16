@@ -9,8 +9,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.background,
+     //backgroundColor: AppColor.background,
       appBar: AppBar(
+           toolbarHeight: 80,
         backgroundColor: AppColor.background,
         elevation: 0,
       
@@ -28,14 +29,14 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
+      const SizedBox(height: 15,),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
              const  SizedBox(width: 15,),
              ClipRRect(
-            borderRadius: BorderRadius.circular(15.0), 
+            borderRadius: BorderRadius.circular(10.0), 
             child: Image.asset(
               AppPngPath.scrollImageOne,
               height: 150,
@@ -45,7 +46,7 @@ class HomePage extends StatelessWidget {
           ),
                 const  SizedBox(width: 15,),
           ClipRRect(
-            borderRadius: BorderRadius.circular(15.0),
+           borderRadius: BorderRadius.circular(10.0), 
             child: Image.asset(
               AppPngPath.scrollImageTwo,
                 height: 150,
@@ -55,7 +56,7 @@ class HomePage extends StatelessWidget {
           ),
                 const  SizedBox(width: 15,),
           ClipRRect(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(10.0), 
             child: Image.asset(
               AppPngPath.scrollImageThree,
                height: 150,
@@ -65,7 +66,7 @@ class HomePage extends StatelessWidget {
           ),
                 const  SizedBox(width: 15,),
           ClipRRect(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(10.0), 
             child: Image.asset(
               AppPngPath.scrollImageOne,
                 height: 150,
@@ -79,7 +80,7 @@ class HomePage extends StatelessWidget {
         ),
        Padding(
          padding: const EdgeInsets.all(15.0),
-         child: ClipRRect(  borderRadius: BorderRadius.circular(15.0),child: Image.asset(AppPngPath.homeImageOne,),),
+         child: ClipRRect(  borderRadius: BorderRadius.circular(10.0),child: Image.asset(AppPngPath.homeImageOne,),),
        ),
        
             Padding(
@@ -103,22 +104,22 @@ class HomePage extends StatelessWidget {
               color: AppColor.toneTwo,
               fontSize: 20, 
              fontWeight: FontWeight.w500, 
-           
-            ),
-          ),),
-               
-                ],
+                  ),
+                 ),
+                ),
+               ],
               ),
             ),
-
-            // // Product Grid
-            SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-             const  SizedBox(width: 15,),
-             ClipRRect(
-            borderRadius: BorderRadius.circular(15.0), 
+SingleChildScrollView(
+  scrollDirection: Axis.horizontal,
+  child: Row(
+    children: [
+      const SizedBox(width: 15,),
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(10.0),
             child: Image.asset(
               AppPngPath.bottomScrollImageOne,
               height: 260,
@@ -126,9 +127,31 @@ class HomePage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-                const  SizedBox(width: 15,),
+          const SizedBox(height: 5), 
+          Text(
+            'First Line Text',
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              color: AppColor.primary,
+            ),
+          ),
+          Text(
+            '£39.95',
+            style: TextStyle(
+              fontSize: 18,
+                fontWeight: FontWeight.w500,
+              color: AppColor.primary,
+            ),
+          ),
+        ],
+      ),
+      const SizedBox(width: 15,),
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(10.0),
             child: Image.asset(
               AppPngPath.bottomScrollImageTwo,
               height: 260,
@@ -136,36 +159,97 @@ class HomePage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-                const  SizedBox(width: 15,),
+          const SizedBox(height: 5),
+          Text(
+            'First Line Text',
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              color: AppColor.primary,
+            ),
+          ),
+          Text(
+            '£39.95',
+            style: TextStyle(
+              fontSize: 18,
+                fontWeight: FontWeight.w500,
+              color: AppColor.primary,
+            ),
+          ),
+        ],
+      ),
+      const SizedBox(width: 15,),
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(10.0),
             child: Image.asset(
-                AppPngPath.bottomScrollImageOne,
+              AppPngPath.bottomScrollImageOne,
               height: 260,
               width: 170,
               fit: BoxFit.cover,
             ),
           ),
-                const  SizedBox(width: 15,),
+          const SizedBox(height: 5),
+          Text(
+            'First Line Text',
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              color: AppColor.primary,
+            ),
+          ),
+          Text(
+            '£39.95',
+            style: TextStyle(
+              fontSize: 18,
+                fontWeight: FontWeight.w500,
+              color: AppColor.primary,
+            ),
+          ),
+        ],
+      ),
+      const SizedBox(width: 15,),
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(15.0),
+            borderRadius: BorderRadius.circular(10.0),
             child: Image.asset(
               AppPngPath.bottomScrollImageTwo,
-                 height: 260,
+              height: 260,
               width: 170,
               fit: BoxFit.cover,
             ),
           ),
-                const  SizedBox(width: 15,),
-            ],
+          const SizedBox(height: 5),
+          Text(
+            'First Line Text',
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              color: AppColor.primary,
+            ),
           ),
-        ),
+          Text(
+            '£39.95',
+            style: TextStyle(
+              fontSize: 18,
+                fontWeight: FontWeight.w500,
+              color: AppColor.primary,
+            ),
+          ),
+        ],
+      ),
+      const SizedBox(width: 15,),
+    ],
+  ),
+),
+
           ],
         ),
       ),
-    
     );
   }
-
-
 }

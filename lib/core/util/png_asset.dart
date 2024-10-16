@@ -11,6 +11,13 @@ final class AppPngPath {
   static const storePageLogoOutlined = "assets/png/store_outlined.png";
   static const libraryPageLogoBold = "assets/png/library_bold.png";
   static const libraryPageLogoOutlined = "assets/png/library_outlined.png";
-  static const placeHolder =  "assets/png/palceholder.png";
+  static const placeHolder = "assets/png/palceholder.png";
+  static const searchIcon = "assets/png/search_home.png";
+  static const homeImageOne ="assets/png/home_image_one.png";
+  static const scrollImageOne ="assets/png/scroll_image_one.png";
+  static const scrollImageTwo ="assets/png/scroll_image_two.png";
+  static const scrollImageThree ="assets/png/scroll_image_three.png";
+  static const bottomScrollImageOne ="assets/png/bottom_scroll_image_one.png";
+  static const bottomScrollImageTwo ="assets/png/bottom_scroll_image_two.png";
   
 }

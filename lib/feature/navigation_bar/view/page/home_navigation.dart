@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../core/theme/app_color.dart';
 import '../../../../core/util/png_asset.dart';
+import '../../../bag/view/page/my_bag.dart';
 import '../../../home/view/page/home_page.dart';
+import '../../../saved_items/view/widget/saved_items.dart';
 import '../../getX/home_controller.dart';
 
 class HomeNavigation extends StatelessWidget {
@@ -10,11 +12,11 @@ class HomeNavigation extends StatelessWidget {
 
   final HomeController controller = Get.put(HomeController());
 
-  final List<Widget> _pages = const [
+  final List<Widget> _pages =  [
     HomePage(),
+    ProductListPage(),
     HomePage(),
-    HomePage(),
-    HomePage(),
+    SavedItems(),
   ];
 
   @override
@@ -74,16 +76,7 @@ class HomeNavigation extends StatelessWidget {
               ),
               label: 'Saved Items',
             ),
-            // BottomNavigationBarItem(
-            //   icon: Image.asset(
-            //     controller.selectedIndex.value == 4
-            //         ? AppPngPath.searchPageLogoBold
-            //         : AppPngPath.searchPageLogoOutlined,
-            //     width: 25,
-            //     height: 25,
-            //   ),
-            //   label: 'Search',
-            // ),
+            
           ],
         ),
       ),

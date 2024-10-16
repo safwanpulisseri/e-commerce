@@ -1,5 +1,6 @@
-import 'package:e_commerce/home/view/page/home_page.dart';
 import 'package:flutter/material.dart';
+import 'feature/navigation_bar/view/page/home_navigation.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home:  HomePage(),
+      home:  HomeNavigation(),
     );
   }
 }
